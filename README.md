@@ -1,5 +1,5 @@
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+https://usernameuser1248.github.io/ProjectDocumentation.github.io/
 ## Wellcome to the porject documentation
 
 ### Functions
