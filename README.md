@@ -16,8 +16,6 @@ Get the combined C6 coefficient for all the channels
 
 |n,l,j,n,l,j\rangle \leftrightarrow |n_1,l_1,j_1,n_2,l_2,j_2\rangle 
 
-
-
 channels:[[l_1, j_1], [l_2, j_2]]<br>
 Starting_state would be in the form of [n,l,j]<br>
 n_range=\delta_n <br>
@@ -39,16 +37,22 @@ The formula for this expression is given in the Alex theses.<br>
 
 
 #### <span style="color:blue">state_couple(initial_state = list, final_state = list, channel = list, theta = float, phi = float):</span>
-Gives the matrix element of D as in Alex theses.
+Gives the matrix element of D as in Alex theses.<br>
+initial_state is a list with [[l_1,j_1,m_1], [l_2,j_2,m_2]]<br>
+final_state is a list with [[l_3,j_3,m_3], [l_4,j_4,m_4]]<br>
+channel is a list with [[l_alpha, j_alpha],[l_beta, j_beta]], the intermediate states.<br>
 
-conversion between SI and natural unit, enter the index of [m, hz, eV]. <br>
-bool:<br>
--> true: from SI to atomic unit<br>
--> false: from atomic to SI<br>
+    
+#### <span style="color:blue">full_matrix(state = list, channel = list, theta = float, phi = float):</span>
+Gives the matrix D as in Alex theses.<br>
+state is a list with [[l_1,j_1],[l_2,j_2]]<br>
+channel is a list with [[l_alpha, j_alpha],[l_beta, j_beta]], the intermediate states.<br>
+size of the matrix is determined by j values.<br>
 
-
-
-```markdown
-
-```
+#### <span style="color:blue">H_vdw(states = list, channels = list, n_range = float, theta = float, phi = float):</span>
+Calculates H_vdw.<br>
+states are lists that contain [ [n_1,l_1,j_1],[n_2,l_2,j_2] ]<br>
+Channels are list of [channel_a, Channel_b, Channel_c,...]<br>
+each channel is [[l_alpha,j_alpha],[l_beta,j_beta]]<br>
+n_range is for C6 calculation to specify what the range of n we want to run through theta and phi are the angles<br>
 
