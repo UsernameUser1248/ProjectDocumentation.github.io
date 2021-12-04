@@ -12,8 +12,13 @@ bool:<br>
 
 
 #### <span style="color:blue">C6_calculation(channel = list, starting_state = list, n_range = int)</span>
+Get the combined C6 coefficient for all the channels
 
-Calculate C6 coeffient given channels, starting state and the range of n values.<br>
+|n,l,j,n,l,j\rangle \leftrightarrow |n_1,l_1,j_1,n_2,l_2,j_2\rangle<br>
+channels:[[l_1, j_1], [l_2, j_2]]<br>
+Starting_state would be in the form of [n,l,j]<br>
+n_range=\delta_n <br>
+
 only focus on nP_{1/2} and nP_{1/2} transitions<br>
 The four channels we have are:<br>
 <br>
