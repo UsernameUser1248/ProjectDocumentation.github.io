@@ -13,9 +13,11 @@ bool:<br>
 
 #### <span style="color:blue">C6_calculation(channel = list, starting_state = list, n_range = int)</span>
 Get the combined C6 coefficient for all the channels
-```math
-|n,l,j,n,l,j\rangle \leftrightarrow |n_1,l_1,j_1,n_2,l_2,j_2\rangle<br>
-```
+
+<img src="https://render.githubusercontent.com/render/math?math=|n,l,j,n,l,j\rangle \leftrightarrow |n_1,l_1,j_1,n_2,l_2,j_2\rangle ><br>
+
+
+
 channels:[[l_1, j_1], [l_2, j_2]]<br>
 Starting_state would be in the form of [n,l,j]<br>
 n_range=\delta_n <br>
