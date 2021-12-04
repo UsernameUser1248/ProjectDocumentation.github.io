@@ -1,6 +1,6 @@
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 ## Wellcome to the porject documentation
-
-
 
 ### Functions
 #### <span style="color:blue">unit_transformation(unit=[0,0,0],bool)</span>
@@ -14,7 +14,7 @@ bool:<br>
 #### <span style="color:blue">C6_calculation(channel = list, starting_state = list, n_range = int)</span>
 Get the combined C6 coefficient for all the channels
 
-$|n,l,j,n,l,j\rangle \leftrightarrow |n_1,l_1,j_1,n_2,l_2,j_2\rangle$<br>
+$$|n,l,j,n,l,j\rangle \leftrightarrow |n_1,l_1,j_1,n_2,l_2,j_2\rangle$$<br>
 channels:[[l_1, j_1], [l_2, j_2]]<br>
 Starting_state would be in the form of [n,l,j]<br>
 n_range=\delta_n <br>
