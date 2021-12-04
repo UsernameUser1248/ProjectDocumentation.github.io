@@ -14,7 +14,7 @@ bool:<br>
 #### <span style="color:blue">C6_calculation(channel = list, starting_state = list, n_range = int)</span>
 Get the combined C6 coefficient for all the channels
 
-\|n,l,j,n,l,j>  ->  \|n_1,l_1,j_1,n_2,l_2,j_2>
+[n,l,j,n,l,j>  ->  [n_1,l_1,j_1,n_2,l_2,j_2>
 
 channels:[[l_1, j_1], [l_2, j_2]]<br>
 Starting_state would be in the form of [n,l,j]<br>
