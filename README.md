@@ -56,3 +56,28 @@ Channels are list of [channel_a, Channel_b, Channel_c,...]<br>
 each channel is [[l_alpha,j_alpha],[l_beta,j_beta]]<br>
 n_range is for C6 calculation to specify what the range of n we want to run through theta and phi are the angles<br>
 
+#### <span style="color:blue">Van_der_Waals(states = list, channels = list, n_range = float, theta = float, phi = float, distance = float):</span>
+Calculates V++, V+-, W++, W+- terms.<br>
+outputlist = [V_pp, V_pm, W_pm, W_pp]<br>
+
+#### <span style="color:blue">Energy_eigenstate(energy_levels = list, delta_p = float, delta_m = float):</span>
+Defined the eigenenergies accroding to Alex theses.<br>
+The energy levels should be expressed as [V_pp,V_pm,W_pm.W_pp]<br>
+the output would be a list which is [E_pp,E_pm,E_mp,E_mm]<br>
+return [E_pp,E_pm,E_mp,E_mm]<br>
+
+#### <span style="color:blue">effective_vdw(van_der_waals_energy = list, Omega = list, detuning = list):</span>
+Defined the effective hamiltonian accroding to Alex theses.<br>
+van_der_waals_energy is the energy level that we construct without the laser detuning<br>
+van_der_waals_energy = [V_pp, V_pm, W_pm, W_pp],<br>
+directly use the result from Van_der_Waals.<br>
+Omega is the laser strength, it is in the form [Omega_p, Omega_m]<br>
+Detuning is the laser detuning, it is in the form [delta_p. delta_m]<br>
+return [V_tilda_pp, V_tilda_mm, W_tilda_pp, V_tilda_pm, W_tilda_pm].<br>
+
+
+#### <span style="color:blue">asymptotic_energy(Omega = list, detuning = list):</span>
+Defined accroding to Alex theses.<br>
+output_list = [V_asymptotic_pp, V_asymptotic_mm, V_asymptotic_pm]<br>
+
+
