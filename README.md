@@ -80,4 +80,6 @@ return [V_tilda_pp, V_tilda_mm, W_tilda_pp, V_tilda_pm, W_tilda_pm].<br>
 Defined accroding to Alex theses.<br>
 output_list = [V_asymptotic_pp, V_asymptotic_mm, V_asymptotic_pm]<br>
 
-
+#### <span style="color:blue">spin_interaction(effective_vdw = list):</span>
+Defined J accroding to Alex theses using effective_vdw.<br>
+output_list = [J_parallel,J_z,J_pm,J_pp]<br>
